@@ -77,6 +77,7 @@ public class LoggingAspect {
             message.append("| returning ").append(returnValue.toString());
         }
         LOGGER.info("AROUND - "  + message.toString());
+
         return returnValue;
     }
 }
